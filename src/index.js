@@ -21,7 +21,7 @@ mongoose.connect(URL, {
 app.use(express.json())
 
 app.use(cors({
-    origin:[ `${process.env.FRONTEND_URL}`,`${process.env.BACKEND_URL}`],
+    origin: "*",
     credentials: true,
     exposedHeaders: ['Set-Cookie']
 }))
